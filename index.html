@@ -16,21 +16,42 @@
   <body>
     <header class="primary-header">
       <div class="container">
-        <a href="#"><img src="images/logo.svg" alt="Manage" /></a>
-        <nav class="primary-navigation">
-          <ul role="list" class="nav-list">
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Product</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Community</a></li>
-          </ul>
-        </nav>
-        <button class="button">Get started</button>
+        <div class="nav-wrapper">
+          <a href="#"><img src="images/logo.svg" alt="Manage" /></a>
+          <button
+            class="mobile-nav-toggle"
+            aria-controls="primary-navigation"
+            aria-expanded="false"
+          >
+            <img
+              class="icon-hamburger"
+              src="images/icon-hamburger.svg"
+              alt=""
+              aria-hidden="true"
+            />
+            <img
+              class="icon-close"
+              src="images/icon-close.svg"
+              alt=""
+              aria-hidden="true"
+            />
+            <span class="visually-hidden">Menu</span>
+          </button>
+          <nav class="primary-navigation" id="primary-navigation">
+            <ul role="list" class="nav-list">
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Product</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Community</a></li>
+            </ul>
+          </nav>
+          <button class="button" style="display: none">Get started</button>
+        </div>
       </div>
     </header>
     <main>
-      <section>
+      <section class="padding-block-900">
         <div class="container">
           <div class="even-columns">
             <div>
@@ -49,7 +70,7 @@
           </div>
         </div>
       </section>
-      <section>
+      <section class="padding-block-900">
         <div class="container">
           <div class="even-columns">
             <div>
@@ -96,12 +117,12 @@
           </div>
         </div>
       </section>
-      <section class="carousel container">
-        <h2 class="fs-secendary-heading">What they've said</h2>
+      <section class="carousel | container padding-block-700">
+        <h2 class="fs-secondary-heading fw-bold">What they've said</h2>
         <!-- carousel here -->
         <button class="button">Get Started</button>
       </section>
-      <section class="cta | bg-accent-400 text-neutral-100">
+      <section class="cta | bg-accent-400 text-neutral-100 padding-block-700">
         <div class="container">
           <div class="even-columns">
             <div>
@@ -117,7 +138,7 @@
       </section>
     </main>
 
-    <footer class="bg-neutral-900 text-neutral-100">
+    <footer class="padding-block-700 bg-neutral-900 text-neutral-100">
       <div class="container">
         <div class="even-columns">
           <div>
